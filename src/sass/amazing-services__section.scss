@@ -1,0 +1,110 @@
+.amazing-services {
+  margin-bottom: 90px;
+}
+
+.amazing-services__title,
+.amazing-services__title-next {
+  color: $default__color--text;
+}
+
+.amazing-services__title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.amazing-services__title-next {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 64px;
+  text-transform: uppercase;
+}
+
+.amazing-services__title-next::after {
+  @extend %default__pseudo--bar;
+}
+
+/* services list */
+.amazing-services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.amazing-services__item {
+  margin-left: 80px;
+  margin-bottom: 102px;
+}
+
+.amazing-services__item:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
+.amazing-services__image {
+  width: 300px;
+  position: relative;
+}
+
+.amazing-services__item-title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: $default__color--text;
+  text-transform: uppercase;
+}
+
+.amazing-services__item-text {
+  margin: 0;
+  color: $default__color--text--grey;
+  font-size: 15px;
+}
+
+/* svg icons before section */
+.amazing-services__image--clock::before {
+  content: url('../images/service/ALARM.svg');
+  margin-left: -60px;
+  position: absolute;
+  top: 2px;
+}
+
+.amazing-services__image--graph::before {
+  content: url('../images/service/LINE__GRAPH.svg');
+  margin-left: -60px;
+  position: absolute;
+  top: 2px;
+}
+
+.amazing-services__image--pc::before {
+  content: url('../images/service/COMPUTER__OK.svg');
+  margin-left: -60px;
+  position: absolute;
+  top: 2px;
+}
+
+.amazing-services__image--book::before {
+  content: url('../images/service/BOOK__2.svg');
+  margin-left: -60px;
+  position: absolute;
+  top: 2px;
+}
+
+.amazing-services__image--home::before {
+  content: url('../images/service/HOME.svg');
+  margin-left: -60px;
+  position: absolute;
+  top: 2px;
+}
+
+.amazing-services__image--digit::before {
+  content: url('../images/service/IMAGE.svg');
+  margin-left: -60px;
+  position: absolute;
+  top: 2px;
+}
